@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <style>
         ul li:hover{
             color: aqua;
+        }
+        .btn1{
+            background-color: white;
+            color: red;
+            font-size: 24px;
+            padding: 6px 8px;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: all .2s ease-in-out;
+        
+        }
+        .btn1:hover{
+            background-color: transparent;
+            color: white;
+            transform: scale(1.03);
         }
      </style>
 </head>
@@ -25,15 +41,15 @@
     <!-- header section -->
     <div class=" bg-slate-500 pt-40 px-20 flex items-center justify-around">
        <div class="w-1/2">
-         <h1 class="text-3xl font-extrabold">Hi. I'm Ujjal. I design awesome wbsites.</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vitae cumque ullam reiciendis eaque! Saepe assumenda nesciunt distinctio? Voluptates, in cupiditate! Mollitia sunt odio blanditiis reprehenderit corporis reiciendis sit fugiat.</p>
-         <div>
-            <button></button>
-        <p>wathc presentation video</p>
+         <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ujjal</span> . I design <br> awesome wbsites.</h1>
+         <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vitae cumque ullam reiciendis eaque! Saepe assumenda nesciunt distinctio? Voluptates, in cupiditate! Mollitia sunt odio blanditiis reprehenderit corporis reiciendis sit fugiat.</p>
+         <div class="flex gap-4 items-center">
+            <button class="btn1"><i class="fa-solid fa-play"></i></button>
+        <p class="text-white underline">wathc presentation video</p>
         </div>
 
        </div>
-       <img class="w-96" src="/ujjal.png" alt="" >
+       <img class="w-96" src="./ujjal.png" alt="" >
 
 
     </div>
