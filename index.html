@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <style>
-        ul li:hover{
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul li:hover {
             color: aqua;
         }
-        .btn1{
+
+        .btn1 {
             background-color: white;
             color: red;
             font-size: 24px;
@@ -18,16 +22,34 @@
             border-radius: 50%;
             border: 2px solid white;
             transition: all .2s ease-in-out;
-        
+
         }
-        .btn1:hover{
+
+        .btn1:hover {
             background-color: transparent;
             color: white;
             transform: scale(1.03);
         }
-     </style>
+        .card{
+           text-align: center; 
+        }
+        .card i{
+            font-size: 40px;
+            color: rgb(157, 40, 40);
+        }
+        .card h2{
+            font-size: 32px;
+            color: white;
+            font-weight: 700;
+        }
+        .card p{
+            color: rgb(233, 216, 216);
+        }
+    </style>
 </head>
+
 <body>
+    <!-- nav section  -->
     <nav class="bg-black p-4 text-white flex items-center justify-around fixed w-full">
         <h1 class="text-3xl font-bold">Ujjal Debnath</h1>
         <ul class="flex gap-16 text-xl font-semibold">
@@ -40,19 +62,45 @@
     </nav>
     <!-- header section -->
     <div class=" bg-slate-500 pt-40 px-20 flex items-center justify-around">
-       <div class="w-1/2">
-         <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ujjal</span> . I design <br> awesome wbsites.</h1>
-         <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vitae cumque ullam reiciendis eaque! Saepe assumenda nesciunt distinctio? Voluptates, in cupiditate! Mollitia sunt odio blanditiis reprehenderit corporis reiciendis sit fugiat.</p>
-         <div class="flex gap-4 items-center">
-            <button class="btn1"><i class="fa-solid fa-play"></i></button>
-        <p class="text-white underline">wathc presentation video</p>
-        </div>
+        <div class="w-1/2">
+            <h1 class="text-4xl text-white font-bold">Hi. <span class="text-red-700">I'm Ujjal</span> . I design <br>
+                awesome wbsites.</h1>
+            <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Non vitae cumque ullam reiciendis eaque! Saepe assumenda nesciunt distinctio? Voluptates, in cupiditate!
+                Mollitia sunt odio blanditiis reprehenderit corporis reiciendis sit fugiat.</p>
+            <div class="flex gap-4 items-center">
+                <button class="btn1"><i class="fa-solid fa-play"></i></button>
+                <p class="text-white underline">wathc presentation video</p>
+            </div>
 
-       </div>
-       <img class="w-96" src="./ujjal.png" alt="" >
+        </div>
+        <img class="w-96" src="./ujjal.png" alt="">
 
 
     </div>
 
+    <!-- serveces section  -->
+    <div class="bg-slate-700 flex flex-col gap-2 items-center py-16">
+        <h1 class="text-3xl font-bold text-white">What i do the best</h1>
+        <p class="text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <div class="flex gap-5 max-w-6xl">
+            <div class="card space-y-2">
+                <i class="fa-solid fa-medal"></i>
+                <h2>web design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus, praesentium,</p>
+            </div>
+            <div class="card space-y-2">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>web developmant</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus, praesentium,</p>
+            </div>
+            <div class="card space-y-2">
+                <i class="fa-solid fa-umbrella"></i>
+                <h2>web uxi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus, praesentium,</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
